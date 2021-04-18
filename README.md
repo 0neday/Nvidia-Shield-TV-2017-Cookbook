@@ -96,18 +96,18 @@
     进入bootloader锁定提示界面，此时，按手柄A键
     
  12、fix time setting and dns
- ```
-# fix time server, redirect all udp 123 to local timeserver
-iptables -t nat -N TIMER
-iptables -t nat -A TIMER  -d 192.168.1.1 -j RETURN
-iptables -t nat -A TIMER  -p udp  -j REDIRECT --to-ports 123
-iptables -t nat -I PREROUTING -p udp --dport 123 -j TIMER
+    ```
+   # fix time server, redirect all udp 123 to local timeserver
+   iptables -t nat -N TIMER
+   iptables -t nat -A TIMER  -d 192.168.1.1 -j RETURN
+   iptables -t nat -A TIMER  -p udp  -j REDIRECT --to-ports 123
+   iptables -t nat -I PREROUTING -p udp --dport 123 -j TIMER
 
-# netflix dns fix
-iptables -t nat -N NETFLIX
-iptables -t nat -A NETFLIX  -d 192.168.1.1 -j RETURN
-iptables -t nat -A NETFLIX  -p udp  -j REDIRECT --to-ports 'your local dns server'
-iptables -t nat -I PREROUTING -p udp --dport 53 -j NETFLIX
+   # netflix dns fix
+   iptables -t nat -N NETFLIX
+   iptables -t nat -A NETFLIX  -d 192.168.1.1 -j RETURN
+   iptables -t nat -A NETFLIX  -p udp  -j REDIRECT --to-ports 'your local dns server'
+   iptables -t nat -I PREROUTING -p udp --dport 53 -j NETFLIX
 
- ```
+    ```
  
