@@ -78,7 +78,6 @@
     fastboot flash recovery recovery.img
     fastboot flash system system.img
     fastboot flash vendor vendor.img
-    fastboot reboot
     ```
 
     有几条指令需要较长时间，务必耐心等待。途中不要做任何操作
