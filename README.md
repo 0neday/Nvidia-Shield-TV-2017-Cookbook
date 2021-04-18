@@ -1,5 +1,3 @@
-# Nvidia-Shield-TV-2017-Cookbook
-
 # Nvidia Shield TV 2017 国行刷美版固件指南
 
 ## 必备文件
