@@ -58,8 +58,7 @@
    或者在重启动的时候，同时按住手柄的AB键。
 
 8. 此时，Nvidia Shield TV 2017重启并进入bootloader界面，此时，计算机会安装Fastboot驱动，选择从磁盘安装，找到SHIELD_Family_WHQL_USB_driver_201801.zip的解压文件夹并执行安装，屏幕提示Android ADB Interface驱动安装成功
-   PS：或者 在重启的时候，同时按住 AB键。
-
+  
 9. 执行如下指令
 
    ```
